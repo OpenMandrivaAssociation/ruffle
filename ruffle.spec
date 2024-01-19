@@ -29,36 +29,44 @@ cat >.cargo/config <<EOF
 [source.crates-io]
 replace-with = "vendored-sources"
 
-[source."https://github.com/RustAudio/dasp"]
-git = "https://github.com/RustAudio/dasp"
-rev = "f05a703"
+[source."git+https://github.com/gfx-rs/wgpu?branch=v0.18"]
+git = "https://github.com/gfx-rs/wgpu"
+branch = "v0.18"
 replace-with = "vendored-sources"
 
-[source."https://github.com/ruffle-rs/gc-arena"]
-git = "https://github.com/ruffle-rs/gc-arena"
+[source."git+https://github.com/ruffle-rs/egui?branch=consume_keys"]
+git = "https://github.com/ruffle-rs/egui"
+branch = "consume_keys"
 replace-with = "vendored-sources"
 
-[source."https://github.com/ruffle-rs/h263-rs"]
+[source."git+https://github.com/ruffle-rs/h263-rs?rev=16700664e2b3334f0a930f99af86011aebee14cc"]
 git = "https://github.com/ruffle-rs/h263-rs"
-rev = "ce3d3c798190be1c78c47099e76d095756a195ac"
+rev = "16700664e2b3334f0a930f99af86011aebee14cc"
 replace-with = "vendored-sources"
 
-[source."https://github.com/ruffle-rs/nellymoser"]
+[source."git+https://github.com/ruffle-rs/jpegxr?branch=ruffle"]
+git = "https://github.com/ruffle-rs/jpegxr"
+branch = "ruffle"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/ruffle-rs/nellymoser?rev=4a33521c29a918950df8ae9fe07e527ac65553f5"]
 git = "https://github.com/ruffle-rs/nellymoser"
+rev = "4a33521c29a918950df8ae9fe07e527ac65553f5"
 replace-with = "vendored-sources"
 
-[source."https://github.com/ruffle-rs/quick-xml"]
-git = "https://github.com/ruffle-rs/quick-xml"
-rev = "8496365ec1412eb5ba5de350937b6bce352fa0ba"
+[source."git+https://github.com/ruffle-rs/nihav-vp6?rev=83c7e1094d603d9fc1212d39d99abb17f3a3226b"]
+git = "https://github.com/ruffle-rs/nihav-vp6"
+rev = "83c7e1094d603d9fc1212d39d99abb17f3a3226b"
 replace-with = "vendored-sources"
 
-[source."https://github.com/ruffle-rs/rust-flash-lso"]
+[source."git+https://github.com/ruffle-rs/rust-flash-lso?rev=2f976fb15b30aa4c5cb398710dc5e31a21004e57"]
 git = "https://github.com/ruffle-rs/rust-flash-lso"
-rev = "19fecd07b9888c4bdaa66771c468095783b52bed"
+rev = "2f976fb15b30aa4c5cb398710dc5e31a21004e57"
 replace-with = "vendored-sources"
 
 [source.vendored-sources]
 directory = "vendor"
+
 EOF
 rm -f Cargo.lock
 
