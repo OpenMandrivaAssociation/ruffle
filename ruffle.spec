@@ -4,7 +4,7 @@ Release:        1
 Summary:        Adobe Flash Player emulator written in Rust
 License:        Apache-2.0 OR MIT
 URL:            https://ruffle.rs/
-Source0:         https://github.com/ruffle-rs/ruffle/archive/refs/tags/nightly-2024-01-19.tar.gz
+Source0:         https://github.com/ruffle-rs/ruffle/archive/refs/tags/ruffle-nightly-2024-01-19.tar.gz
 Source1:        vendor.tar.xz
 Source2:        cargo_config
 
