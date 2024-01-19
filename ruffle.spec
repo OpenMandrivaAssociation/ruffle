@@ -61,9 +61,8 @@ directory = "vendor"
 EOF
 rm -f Cargo.lock
 
-
-
 %build
+%cargo_prep -v vendor
 %cargo_build
 
 %install
