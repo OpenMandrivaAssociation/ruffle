@@ -22,6 +22,7 @@ language. Ruffle targets both the desktop and the web using WebAssembly.
 
 %prep
 %autosetup -n %{name}-nightly-2024-01-19 -a1 -p1
+%cargo_prep -v vendor
 
 install -d -m 0755 .cargo
 cat >.cargo/config <<EOF
@@ -62,7 +63,6 @@ EOF
 rm -f Cargo.lock
 
 %build
-%cargo_prep -v vendor
 %cargo_build
 
 %install
