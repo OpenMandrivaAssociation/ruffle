@@ -21,7 +21,7 @@ Ruffle is an Adobe Flash Player emulator written in the Rust programming
 language. Ruffle targets both the desktop and the web using WebAssembly.
 
 %prep
-%autosetup -n %{name}-v%{version} -a1 -p1
+%autosetup -n %{name}-nightly-2024-01-19 -a1 -p1
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
