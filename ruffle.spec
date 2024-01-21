@@ -14,6 +14,7 @@ BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(alsa)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(python)
+BuildRequires:  pkgconfig(gdk-3.0)
 BuildRequires:  pkgconfig(gio-2.0)
 BuildRequires:  pkgconfig(x11)
 BuildRequires:	jdk-current
