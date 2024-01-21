@@ -15,6 +15,7 @@ BuildRequires:  pkgconfig(alsa)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(python)
 BuildRequires:  pkgconfig(x11)
+BuildRequires:	jdk-current
 
 %description
 Ruffle is an Adobe Flash Player emulator written in the Rust programming
