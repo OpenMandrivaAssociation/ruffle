@@ -1,6 +1,6 @@
 Name:           ruffle
 Version:        20240119
-Release:        1
+Release:        2
 Summary:        Adobe Flash Player emulator written in Rust
 License:        Apache-2.0 OR MIT
 URL:            https://ruffle.rs/
